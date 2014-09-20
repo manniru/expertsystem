@@ -50,22 +50,23 @@
 				        </a>
 					</div> <!-- /.col-md-12 -->
                     <div class="col-md-3 col-sm-12">
-                    	<a rel="nofollow" href="http://www.templatemo.com/preview/templatemo_400_polygon"><img src="images/templatemo_logo.jpg" alt="Polygon HTML5 Template"></a>
+                    	<a rel="nofollow" href="http://www.templatemo.com/preview/templatemo_400_polygon"><img src="images/templatemo_logo.png" alt="Polygon HTML5 Template"></a>
                     </div>
 					<div class="col-md-9 main_menu">
 						<ul>
 							<li><a class="show-1 templatemo_home" href="#">
                             	<span class="fa fa-camera"></span>
                                 Gallery</a></li>
-							<li><a class="show-2 templatemo_page2" href="#">
-                            	<span class="fa fa-users"></span>
-                          		  Our team</a></li>
 							<li><a class="show-3 templatemo_page3" href="#">
                             	<span class="fa fa-cogs"></span>
                             	Services</a></li>
 							<li><a class="show-5 templatemo_page5" href="#">
                             	<span class="fa fa-envelope"></span>
                                 Contact</a></li>
+                                
+                                <li><a class="show-5 templatemo_page5" href="algorithms.jsp">
+                            	<span class="fa fa-envelope"></span>
+                                Algorithms</a></li>
 						</ul>
 					</div> <!-- /.col-md-12 -->
 				</div> <!-- /.row -->
@@ -729,8 +730,7 @@
     <div class="templatemo_footer">
     	<div class="container">
     	<div class="row">
-        	<div class="col-md-9 col-sm-12">Copyright &copy; 2084 Company Name <!-- Credit: www.templatemo.com --> | 
-            <a rel="nofollow" href="http://unsplash.com">Photos</a> by Unsplash</div>
+        	<div class="col-md-9 col-sm-12">System Design and Developed By | Habib Sharif Mahmood </div>
             <div class="col-md-3 col-sm-12 templatemo_rfooter">
             	  <a href="#">
                  	<div class="hex_footer">
