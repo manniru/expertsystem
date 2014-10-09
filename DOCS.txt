@@ -1,0 +1,89 @@
+
+algorithms 
+
+1.	if (chestpain is verylow) and (cholestrol is verylow) and (max.heartrate is verylow) and (bloodpressure is verylow) and (bloodsugar is low) and (oldpeak is verylow) then (result is  
+healthy)(precautions is exercise)
+
+2.	if (chestpain is verylow) and (cholestrol is verylow) and (max.heartrate is verylow) and (bloodpressure is verylow) and (bloodsugar is low) and (oldpeak is low) then (result is  
+healthy)(precautions is exercise)
+
+3.	 if (chestpain is verylow) and (cholestrol is verylow) and (max.heartrate is verylow) and (bloodpressure is verylow) and (bloodsugar is medium) and (oldpeak is medium) then (result is  
+low_risk)(precautions is exercise)
+
+4.	if (chestpain is verylow) and (cholestrol is verylow) and (max.heartrate is verylow) and (bloodpressure is high) and (bloodsugar is medium) and (oldpeak is medium) then (result is  
+low_risk)(precautions is low_salt_diet)
+
+5.	if (chestpain is verylow) and (cholestrol is verylow) and (max.heartrate is high) and (bloodpressure is high) and (bloodsugar is high) and (oldpeak is terrible) then (result is  
+moderate_risk)(precautions is low_salt_diet)
+
+6.	if (chestpain is verylow) and (cholestrol is high) and (max.heartrate is high) and (bloodpressure is high) and (bloodsugar is high) and (oldpeak is terrible) then (result is risk) 
+(precautions is low_salt_diet)
+
+7.	if (chestpain is high) and (cholestrol is high) and (max.heartrate is high) and (bloodpressure is high) and (bloodsugar is high) and (oldpeak is terrible) then (result is risk)(precautions  
+is low_salt_diet)
+
+8.	if (chestpain is moderate) and (cholestrol is medium) and (max.heartrate is medium) and (bloodpressure is medium) and (bloodsugar is medium) and (oldpeak is medium) then (result is  
+moderate_risk)(precautions is useoliveoil)
+
+9.	if (chestpain is veryhigh) and (cholestrol is veryhigh) and (max.heartrate is veryhigh) and (bloodpressure is veryhigh) and (bloodsugar is veryhigh) and (oldpeak is risk) then (result is  
+high_risk)(precautions is anyothr)
+
+10.	 if (chestpain is veryhigh) and (cholestrol is veryhigh) and (max.heartrate is veryhigh) and (bloodpressure is veryhigh) and (bloodsugar is veryhigh) and (oldpeak is terrible) then (result  
+is risk)(precautions is anyothr)
+
+11.	if (chestpain is veryhigh) and (cholestrol isveryhigh) and (max.heartrate is veryhigh) and (bloodpressure is veryhigh) and (bloodsugar is veryhigh) and (oldpeak is terrible) then (result  
+is high_risk)(precautions is anyothr)
+
+12.	if (chestpain is veryhigh) and (cholestrol is veryhigh) and (max.heartrate is veryhigh) and (bloodpressure is veryhigh) and (bloodsugar is medium) and (oldpeak is terrible) then (result is  
+risk)(precautions is anyothr)
+
+13.	if (chestpain is veryhigh) and (cholestrol is veryhigh) and (max.heartrate is veryhigh) and (bloodpressure is medium) and (bloodsugar is medium) and (oldpeak is medium) then (result is  
+risk)(precautions is anyothr)
+
+14.	 if (chestpain is veryhigh) and (cholestrol is veryhigh) and (max.heartrate is medium) and (bloodpressure is medium) and (bloodsugar is normal) and (oldpeak is medium) then (result is  
+moderate_risk)(precautions is anyothr)
+
+15.	if (chestpain is veryhigh) and (cholestrol is medium) and (max.heartrate is medium) and (bloodpressure is medium) and (bloodsugar is normal) and (oldpeak is medium) then (result is  
+low_risk)(precautions is anyothr)
+
+16.	if (chestpain is high) and (cholestrol is medium) and (max.heartrate is medium) and (bloodpressure is medium) and (bloodsugar is normal) and (oldpeak is medium) then (result is low_risk) 
+(precautions is balanceddiet)
+
+17.	 if (chestpain is low) and (cholestrol is veryhigh) and (max.heartrate is veryhigh) and (bloodpressure is medium) and (bloodsugar is normal) and (oldpeak is medium) then (result is  
+low_risk)(precautions is balanceddiet)
+
+18.	if (chestpain is moderate) and (cholestrol is high) and (max.heartrate is high) and (bloodpressure is veryhigh) and (bloodsugar is veryhigh) and (oldpeak is risk) then (result is  
+high_risk)(precautions is balanceddiet)
+
+19.	 if (chestpain is moderate) and (cholestrol is high) and (max.heartrate is high) and (bloodpressure is veryhigh) and (bloodsugar is veryhigh) and (oldpeak is risk) then (result is risk) 
+(precautions is useoliveoil)
+
+20.	if (chestpain is low) and (cholestrol is medium) and (max.heartrate is medium) and (bloodpressure is medium) and (bloodsugar is medium) and (oldpeak is medium) then (result is  
+moderate_risk)(precautions is useoliveoil)
+
+21.	if (chestpain is low) and (cholestrol is verylow) and (max.heartrate is verylow) and (bloodpressure is medium) and (bloodsugar is medium) and (oldpeak is medium) then (result is  
+low_risk)(precautions is useoliveoil)
+
+22.	if (chestpain is very low) and (cholestrol is verylow) and (max.heartrate is high and (blood pressure is high) and (blood sugar is high) and (old peak is terrible) then (result is risk) 
+(precautions is useoliveoil)
+
+
+
+criteria
+1. chestpain: in chest pain there are five different membership functions. the five different types are very low, low, moderate, high and very high. the range of chest pain is 0-1.
+
+2. blood pressure: in blood pressure there are five different membership functions. the five different types are very low, low, medium, high and very high. the range of blood pressure id given by  
+60-200.
+
+3. cholesterol: cholesterol has salient effect on the result and can change it easily. for this input field, we use the value of low density lipoprotein (ldl) cholesterol. in cholesterol there are  
+five different membership functions. the five different types are very low, low, medium, high and very high. the range of cholesterol is 100-400.
+
+4. blood sugar: blood sugar field is one of the most important factors in this system that changes the result. in blood sugar there are five different membership functions. the five different types  
+are very low, low, medium, high and very high.thus the range of blood sugar is 50-250.
+
+5. maximum heart rate: in maximum heart rate there are five different membership functions. the five different types are very low, low, medium, high and very high. the range of maximum heart is 70-  
+150.
+
+6. old peak: this input field means st depression induced by exercise relative to rest. old peak field has 5 fuzzy sets (very low, low, medium ,terrible and risk). these fuzzy sets have been shown  
+in table 5 with their ranges in old peak there are five different membership functions. the five different types are very low, low, medium, high and very high . the range for old peak is given by  
+0-1.

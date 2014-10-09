@@ -1,32 +1,75 @@
+<%@ page import="java.io.*,java.util.*" %>
 <%!String message = ""; %>
+
 <%
-if(request.getParameter("submit") != null) {
-	String op1 = request.getParameter("op1");
-	String op2 = request.getParameter("op2");
+   Enumeration paramNames = request.getParameterNames();
+
+   while(paramNames.hasMoreElements()) {
+      String paramName = (String)paramNames.nextElement();
+      out.print("<tr><td>" + paramName + "</td>\n");
+      String paramValue = request.getHeader(paramName);
+      out.println("<td> " + paramValue + "</td></tr>\n");
+   }
+%>
+
+<%!
+/**
+public String results(String op1, String op2, String op3, String op4, String op5, String op6, String op7, String op8, String op9, String op10, String op11) {
+	String output = "";
+	
+	// (chestpain is ) and (cholestrol is very_low) and (max.heartrate is very_low) and (blood_pressure is very_low) and (bloodsugar is low) and (oldpeak is very_low) then (result is healthy)(precautions is Exercise)
+	
+	if(op1.equals("veryLow") && op2.equals("veryLow")) {
+		output = "<font color='#FF0000'>You have High Risk Heart Attacks</font>";
+	}
 	
 	if(op1.equals("very high") && op2.equals("very high")) {
-		message = "<font color='#FF0000'>You have High Risk Heart Attacks</font>";
+		output = "<font color='#FF0000'>You have High Risk Heart Attacks</font>";
 	}
 	
 	if(op1.equals("very low") && op2.equals("very low")) {
-		message = "<font color='#0000CC'>You are in Good Health</font>";
+		output = "<font color='#0000CC'>You are in Good Health</font>";
 	}
 	
 	if(op1.equals("very high") && op2.equals("very low")) {
-		message = "<font color='#009933'>Try to be taken medicine, and get enough sleep</font>";
+		output = "<font color='#009933'>Try to be taken medicine, and get enough sleep</font>";
 	}
 	
 	if(op1.equals("very low") && op2.equals("very high")) {
-		message = "<font color='#009933'>dont be thinking to much, and get enough sleep</font>";
+		output = "<font color='#009933'>dont be thinking to much, and get enough sleep</font>";
 	}
 	
-	
-}
+	return output;
 
+}
+*/
+%>
+<%
+/**
+if(request.getParameter("submit") != null) {
+	String op1 = request.getParameter("op1");
+	String op2 = request.getParameter("op2");
+	String op3 = request.getParameter("op3");
+	String op4 = request.getParameter("op4");
+	String op5 = request.getParameter("op5");
+	String op6 = request.getParameter("op6");
+	String op7 = request.getParameter("op7");
+	String op8 = request.getParameter("op8");
+	String op9 = request.getParameter("op9");
+	String op10 = request.getParameter("op10");
+	String op11 = request.getParameter("op11");
+	
+	message = results(op1, op2, op3, op4, op5, op6, op7, op8, op9, op10, op11);
+		
+}
+*/
 %>
 <title>Expert System Algorithms</title>
 <form id="form1" name="form1" method="post">
-<table width="886" border="1" cellspacing="1" cellpadding="0">
+<table width="886" border="1" cellspacing="1" cellpadding="0" align="center">
+  <tr>
+    <td colspan="3" align="center"><h1>Application of Data Mining in Medicine:<br /> an Expert System to predict heart disease</h1></td>
+  </tr>
   <tr>
     <td colspan="3" align="center"><h1><%= message %></font></h1></td>
   </tr>
@@ -35,7 +78,7 @@ if(request.getParameter("submit") != null) {
     <td width="448"><table width="100%" border="1" cellspacing="1" cellpadding="0">
       <tr>
         <td width="64%"><label for="select4">Chest Pain:</label></td>
-        <td width="36%"><select name="op1" id="op1">
+        <td width="36%"><select name="op1">
           <option value="very low">very low</option>
           <option value="moderate">moderate</option>
           <option value="high">high</option>
@@ -147,7 +190,4 @@ if(request.getParameter("submit") != null) {
     <td width="448"><img src="images/heart.jpg" width="448" height="303"></td>
   </tr>
 </table>
-
-  <p>&nbsp;</p>
-  <p><strong>Final Results mm</strong></p>
 </form>
